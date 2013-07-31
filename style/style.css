@@ -1,0 +1,115 @@
+.search{
+	width: 300px;
+	height: 30px;
+	padding-left: 35px !important;
+	background: url("img/search.png") no-repeat 10px 4px;
+}
+.search:focus{
+	background: url("img/search_h.png") no-repeat 10px 4px;
+}
+
+#example{
+	background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 4px 4px;
+    padding: 9px;
+}
+#example a{
+	color: #252525;
+}
+a, a:hover{
+	transition: color 0.3s  linear;
+}
+h4, h3{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+span.not{
+	color: #8b8b8b;
+}
+#main-menu{
+	margin: 0;
+	position: relative;
+	margin-bottom: 50px;
+}
+#main-menu li{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1em;
+	background-repeat: no-repeat;
+	padding-top: 130px;
+	cursor: pointer;
+	min-width: 128px;
+	text-align: center;
+}
+#example li:hover a{
+	color: #6e9f4a;
+}
+#main-menu li:first-child{
+	margin-left: 0;
+}
+#main-menu .css{
+	background-image: url("img/css.png");
+}
+#main-menu .css:hover{
+	background-image: url("img/css_h.png");	
+}
+#main-menu .html{
+	background-image: url("img/html.png");
+}
+#main-menu .html:hover{
+	background-image: url("img/html_h.png");
+}
+#main-menu .psd{
+	background: url("img/psd.png") no-repeat;
+}
+#main-menu .psd:hover{
+	background-position: 0 -138px;
+}
+
+#mini-menu{
+	margin: 0;		
+	margin-bottom: 50px;	
+}
+#mini-menu li{
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;	
+	list-style: none;
+	background: url("img/sprite_icon.png") no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+#mini-menu .i1{
+	background-position: 0 0;
+}
+#mini-menu .i2{
+	background-position: -32px 0;
+}
+
+#mini-menu .i3{
+	background-position: -64px 0;
+}
+#mini-menu .i4{
+	background-position: -96px 0;
+}
+
+#mini-menu .i1:hover{
+	background-position: -128px 0;
+}
+#mini-menu .i2:hover{
+	background-position: -160px 0;
+}
+#mini-menu .i3:hover{
+	background-position: -192px 0;
+}
+#mini-menu .i4:hover{
+	background-position: -224px 0;
+}
+
+.footer{
+	margin-top: 60px;
+}
+
+ body{padding-top:20px;padding-bottom:40px;}.container-narrow{margin:0 auto;max-width:800px;}.container-narrow>hr{margin:30px 0;}.jumbotron{margin:60px 0;text-align:center;}.jumbotron h1{font-size:40px;line-height:1;}.jumbotron .btn{font-size:21px;padding:14px 24px;}.marketing{margin:60px 0;}.marketing p+h4{margin-top:28px;}

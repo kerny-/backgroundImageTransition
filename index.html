@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery плагин backgroundImageTransition</title>
+        <link rel="stylesheet" href="style/bootstrap.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>        
+        <script src="backgroundImageTransition.js"></script>
+        <!--[if lt IE 9]>
+              <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
+        <script type="text/javascript">
+            $(function() {
+                $(".search").backgroundImageTransition({
+                    "transition-duration": 300,
+                    "pseudo-class": ":focus"
+                });
+                $(".css, .psd, .html, #mini-menu li").backgroundImageTransition({
+                    "transition-duration": 300,
+                    "pseudo-class": ":hover"
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container-narrow">
+            <div class="masthead">
+                <h3 class="muted">jQuery плагин backgroundImageTransition</h3>
+            </div>
+            <hr>
+            <div class="jumbotron">
+                <h1>backgroundImageTransition.js</h1>
+                <p class="lead">Плагин для трансформации фоновых изображений для :hover, :focus и <span class="not">:active</span> псевдоклассов</p>
+                <a class="btn btn-large btn-success" href="https://github.com/kerny-/backgroundImageTransition/archive/master.zip">Загрузить</a>
+                <a class="btn btn-large " href="#example">Примеры</a>
+            </div>
+            <h4>Пример инициализации</h4>            
+            <pre>
+$(".selector").backgroundImageTransition({ "transition-duration": 300 });   
+            </pre>
+
+            <h4>Параметры плагина</h4>
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <th>Свойство</th>
+                    <th>Значение по умолчанию</th>
+                    <th>Возможные значения</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>transition-duration</td>
+                    <td>0</td>
+                    <td>число в миллисекундах (<b>int</b>)</td>
+                    <td>определяет длительность анимированного перехода</td>
+                </tr>
+                <tr>
+                    <td>transition-timing-function</td>
+                    <td>swing</td>
+                    <td>название функции расчета промежуточных значений (<b>string</b>)</td>
+                    <td>определяет функцию для расчета промежуточных значений</td>
+                </tr>
+                <tr>
+                    <td>transition-delay</td>
+                    <td>0</td>
+                    <td>число в миллисекундах (<b>int</b>)</td>
+                    <td>определяет паузу перед началом анимации</td>
+                </tr>
+                <tr>
+                    <td>pseudo-class</td>
+                    <td>:hover</td>
+                    <td>:hover, :focus, <span class="not">:active</span></td>
+                    <td>связывает поведение плагина с определенным псевдоклассом</td>
+                </tr>
+                <tr>
+                    <td>eventActivate</td>
+                    <td>mouseenter</td>
+                    <td>jquery  событие (<b>string</b>)</td>
+                    <td>событие, активирующее анимацию</td>
+                </tr>
+                <tr>
+                    <td>eventDeActivate</td>
+                    <td>mouseleave</td>
+                    <td>jquery  событие (<b>string</b>)</td>
+                    <td>событие, активирующее обратную анимацию</td>
+                </tr>
+            </table>
+            <h4>Пример использования</h4>            
+            <pre>
+$(".selector").backgroundImageTransition({
+	"transition-duration": 500,
+	"transition-timing-function": "swing",
+	"transition-delay": 0,                    
+	“pseudo-class” : ":hover"
+});   
+            </pre>      
+            <h3>Примеры</h3>                
+            <div id="example">
+                <h6>Использование изображений</h6>            
+                <ul id="main-menu">
+                    <li class="css"><a href="#">Иконка 1</a></li>
+                    <li class="html"><a href="#">Иконка 2</a></li>
+                    <li class="psd"><a href="#">Иконка 3</a></li>
+                </ul>    
+                <h6>Использование спрайтов</h6>
+                <ul id="mini-menu">
+                    <li class="i1"></li>
+                    <li class="i2"></li>
+                    <li class="i3"></li>
+                    <li class="i4"></li>
+                </ul>     
+                <h6>Форма</h6>     
+                <form>
+                    <input class="search" type="text" />
+                </form>       
+            </div> 
+            <div class="footer">
+                <p>&copy; <a href="http://kerny.ru/">Kerny</a> and <a href="http://sverstay-ka.ru/">sverstay-ka.ru</a></p>
+            </div>
+        </div>  
+    </body>
+</html>
